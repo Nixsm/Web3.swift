@@ -221,7 +221,6 @@ public final class EthereumPublicKey {
 
     // MARK: - Convenient functions
 
-    /*
     public func verifySignature(message: Bytes, v: UInt, r: BigUInt, s: BigUInt) throws -> Bool {
         // Get public key
         var rawpubKey = rawPublicKey
@@ -287,7 +286,7 @@ public final class EthereumPublicKey {
             throw Error.internalError
         }
         return secp256k1_ecdsa_verify(ctx, sig, &hash, pubkey) == 1
-    }*/
+    }
 
     /**
      * Returns this public key serialized as a hex string.
